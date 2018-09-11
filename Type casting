@@ -27,3 +27,33 @@ document.write(parseInt(“2”+”4”)); // 24
 document.write(parseInt(“2”+”4a”)); // 24
 document.write(parseInt(“2a”+”4a”)); // 2
 document.write(parseInt(“sometext24”)); // NaN
+
+
+----------------------
+
+parseFloat (value):
+Converts a given value to a float number, if not possible to convert then returns NaN value
+Ex:
+If the given value is of integer type, then it converts and returns an equivalent float number.
+document.write( parseFloat(24) ); // 24
+document.write(parseFloat(12+12)); // 24
+
+If the given value is of float type, then it returns the float number as it is.
+document.write(parseFloat(3.142)); // 3.142
+document.write(parseFloat(1.6+1.6)); // 3.2
+
+If the given value is of string type, then it tries to extract and return the beginning float part. 
+If string passed to the parseFloat function does not begin with float number then it returns NaN value
+document.write(parseFloat(“24”)); // 24
+document.write(parseFloat(“3.142”)); // 3.142
+document.write(parseFloat(“.142”)); // 0.142
+document.write(parseFloat(“3.142.142”)); // 3.142
+document.write(parseFloat(“3.142+3.142”)); // 3.142
+document.write(parseFloat(“24sometext”)); // 24
+document.write(parseFloat(“3.142sometext”)); // 3.142
+document.write(parseFloat(“sometext3.142”)); // NaN
+document.write(parseFloat (“2”+”4”)); // 24
+document.write(parseFloat (“2”+”4.8”)); // 24.8
+document.write(parseFloat (“2+4.8”)); // 2
+document.write(parseFloat (“2”+”4.8a”)); // 24.8
+document.write(parseFloat(“2a”+”4a”)); // 2
