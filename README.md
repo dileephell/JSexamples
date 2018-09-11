@@ -1,0 +1,3 @@
+# JSexamples
+
+Examples of JS
