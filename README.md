@@ -1,3 +1,5 @@
 # JSexamples
+```js
+   Examples of JS
+```
 
-Examples of JS
